@@ -4,10 +4,17 @@ from webapp.models import Product
 
 
 def index_view(request, *args, **kwargs):
-    products = Product.objects.all()
-
+    products = Product.objects.filter(remainder__gt=0).order_by("category", "name")
     return render(request, "index.html", context={
         'products': products
+    })
+
+
+def product_detail_view(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+
+    return render(request, 'product.html', context={
+        'product': product
     })
 
 #

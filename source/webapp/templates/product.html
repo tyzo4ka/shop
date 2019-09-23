@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{#{% block title %}{{ article.title}}{% endblock %}#}
+{#{% block menu %}#}
+{#    <li><a href="{% url 'article_update' article.pk %}">Edit</a></li>#}
+{#    <li><a href="{% url 'article_delete' article.pk %}">Delete</a></li>#}
+{#{% endblock %}#}
+{% block content %}
+    <h1 class="my-3">{{ product.name }}</h1>
+    <p>Category: {{ product.get_category_display }}</p>
+    <p>Price: {{ product.price }} $</p>
+    <p>Remainder: {{ product.remainder }} p.</p>
+    <div class="pre">{{ product.description }}</div>
+{% endblock %}
