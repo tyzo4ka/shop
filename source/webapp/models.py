@@ -8,6 +8,7 @@ CATEGORY_CHOICES = (
     ('sleepwear', 'Sleep'),
 )
 
+
 class Product(models.Model):
     name = models.CharField(max_length=200, null=False, blank=False, verbose_name='Name')
     description = models.TextField(max_length=3000, null=False, blank=False, verbose_name='Description')
@@ -18,3 +19,7 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name = 'Товар'
+        verbose_name_plural = 'Товары'
