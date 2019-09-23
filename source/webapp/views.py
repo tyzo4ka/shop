@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-# from webapp.forms import ArticleForm
+from webapp.forms import ProductForm
 from webapp.models import Product
 
 
@@ -17,27 +17,23 @@ def product_detail_view(request, pk):
         'product': product
     })
 
-#
-# def article_view(request, pk):
-#     article = get_object_or_404(Article, pk=pk)
-#     return render(request, "article.html", context={"article": article})
-#
-#
-# def article_create_view(request, *args, **kwargs):
-#     if request.method == 'GET':
-#         form = ArticleForm()
-#         return render(request, 'create.html', context={"form": form})
-#     elif request.method == 'POST':
-#         form = ArticleForm(data=request.POST)
-#         if form.is_valid():
-#             article = Article.objects.create(
-#                 title=form.cleaned_data["title"],
-#                 author=form.cleaned_data["author"],
-#                 text=form.cleaned_data["text"],
-#                 category=form.cleaned_data["category"])
-#             return redirect("article_view", pk=article.pk)
-#         else:
-#             return render(request, "create.html", context={"form": form})
+
+def product_create_view(request, *args, **kwargs):
+    if request.method == 'GET':
+        form = ProductForm()
+        return render(request, 'create.html', context={"form": form})
+    elif request.method == 'POST':
+        form = ProductForm(data=request.POST)
+        if form.is_valid():
+            product= Product.objects.create(
+                name=form.cleaned_data["name"],
+                desctiption=form.cleaned_data["description"],
+                category=form.cleaned_data["category"],
+                remainder=form.cleaned_data["remainder"],
+                price=form.cleaned_data['price'])
+            return redirect("product_detail_view", pk=product.pk)
+        else:
+            return render(request, "create.html", context={"form": form})
 #
 #
 # def article_update_view(request, pk):
