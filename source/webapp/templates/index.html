@@ -1,4 +1,7 @@
 {% extends 'base.html' %}
+{% block menu %}
+    <li><a href="{% url 'product_add' %}">Add product</a></li>
+{% endblock %}
 {% block content %}
     <h1 class="mt-3">Shop</h1>
     <div class="row">
