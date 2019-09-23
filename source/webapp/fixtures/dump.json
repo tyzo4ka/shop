@@ -1,10 +1,87 @@
 [
 {
+  "model": "webapp.product",
+  "pk": 1,
+  "fields": {
+    "name": "Soft PJ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "category": "sleepwear",
+    "remainder": 2,
+    "price": "19.99"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 2,
+  "fields": {
+    "name": "Cotton sleepshirt",
+    "description": "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "category": "sleepwear",
+    "remainder": 5,
+    "price": "25.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 3,
+  "fields": {
+    "name": "Bombshell add 2 cups push up bra",
+    "description": "dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "category": "bras",
+    "remainder": 3,
+    "price": "30.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 4,
+  "fields": {
+    "name": "High-neck one-piece swimsuit",
+    "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "category": "swimwear",
+    "remainder": 14,
+    "price": "50.45"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 5,
+  "fields": {
+    "name": "Lace brazilian panty",
+    "description": "sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "category": "panties",
+    "remainder": 200,
+    "price": "5.70"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 6,
+  "fields": {
+    "name": "thong panty",
+    "description": "sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "category": "panties",
+    "remainder": 150,
+    "price": "6.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 7,
+  "fields": {
+    "name": "Very Sexy Push up bra",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "category": "bras",
+    "remainder": 50,
+    "price": "50.50"
+  }
+},
+{
   "model": "auth.user",
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$150000$pYzsGebmdvwO$uMEVFaFbSYx8eaQPzO5ElB9QL6WIedu15DkKN+mpK+g=",
-    "last_login": null,
+    "last_login": "2019-09-23T07:28:02.349Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
