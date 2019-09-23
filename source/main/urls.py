@@ -9,6 +9,6 @@ urlpatterns = [
     path("", index_view, name="index"),
     path("products/<int:pk>/", product_detail_view, name="product_detail"),
     path("product/add/", product_create_view, name="product_add"),
-    path("product/<int:pk>/edit", product_update_view, name="entry_update"),
-    path('product/<int:pk>/delete', product_delete_view, name="entry_delete")
+    path("product/<int:pk>/edit", product_update_view, name="product_update"),
+    path('product/<int:pk>/delete', product_delete_view, name="product_delete")
 ]
