@@ -46,7 +46,7 @@ def product_update_view(request, pk):
             "remainder": product.remainder,
             "price": product.price
         })
-        return render(request, "update.html", context={"form": form, "product": poduct})
+        return render(request, "update.html", context={"form": form, "product": product})
     elif request.method == 'POST':
         form = ProductForm(data=request.POST)
         if form.is_valid():

@@ -1,11 +1,35 @@
+{#{% extends "base.html" %}#}
+{#{% block title %}Update product{% endblock %}#}
+{#{% block menu %}#}
+{#    <li><a href="{% url 'product_detail' product.pk %}">View</a></li>#}
+{#{% endblock %}#}
+{#{% block content %}#}
+{#    <h1>Update product</h1>#}
+{#    <form method="POST" action="{% url "product_update" product.pk %}">#}
+{#        {% include 'partial/product_form.html' with button_text="Update" %}#}
+{#    </form>#}
+{#{% endblock %}#}
+
 {% extends "base.html" %}
-{% block title %}Update product{% endblock %}
 {% block menu %}
-    <li><a href="{% url 'product_detail' product.pk %}">View</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="btn btn-sm btn-outline-secondary" href="{% url 'index' %}">Home</a>
+            <a class="btn btn-sm btn-outline-secondary" href="{% url 'product_delete' product.pk %}">Delete product</a>
+            <a class="btn btn-sm btn-outline-secondary" href="{% url 'product_add' %}">Add product</a>
+        </div>
+    </nav>
 {% endblock %}
+{% block title %}Update product{% endblock %}
 {% block content %}
-    <h1>Update product</h1>
-    <form method="POST" action="{% url "product_update" product.pk %}">
-        {% include 'partial/product_form.html' with button_text="Update" %}
-    </form>
+    <div class="container py-5">
+        <div class="card bg-light text-dark my-5">
+            <h5 class="card-header">Update product</h5>
+            <div class="card-body">
+                <form method="POST" action="{% url "product_update" product.pk %}">
+                    {% include 'partial/product_form.html' with button_text='Update' %}
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}
